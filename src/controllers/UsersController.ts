@@ -52,7 +52,7 @@ class UsersController {
 
       const hashedPassword = bcryptjs.hashSync(password, 10);
 
-      const maleProfileImage = `https://api.dicebear.com/9.x/avataaars/svg?seed=${username}&top=dreads01,dreads02,frizzle,shaggyMullet,shaggy,shortCurly,shortFlat,shortWaved&eyes=default&facialHair=beardLight,beardMajestic&eyebrows=default&mouth=default&facialHairColor=${utilsFunctions.getRandomHexColor()}&hairColor=${utilsFunctions.getRandomHexColor()}&clothesColor=3c4f5c,262e33,25557c,929598,b1e2ff&accessories=eyepatch,prescription02,round,wayfarers,sunglasses&accessoriesProbability=20`;
+      const maleProfileImage = `https://api.dicebear.com/9.x/avataaars/svg?seed=${username}&top=dreads01,dreads02,frizzle,shaggy,shortCurly,shortFlat,shortWaved&eyes=default&facialHair=beardLight,beardMajestic&eyebrows=default&mouth=default&facialHairColor=${utilsFunctions.getRandomHexColor()}&hairColor=${utilsFunctions.getRandomHexColor()}&clothesColor=3c4f5c,262e33,25557c,929598,b1e2ff&accessories=eyepatch,prescription02,round,wayfarers,sunglasses&accessoriesProbability=20`;
       const womanProfileImage = `https://api.dicebear.com/9.x/avataaars/svg?seed=${username}&top=bigHair,bob,bun,curly,curvy,dreads,straight01&eyes=default&facialHair=beardLight,beardMajestic&eyebrows=default&mouth=default&facialHairColor=${utilsFunctions.getRandomHexColor()}&hairColor=${utilsFunctions.getRandomHexColor()}&facialHairProbability=0&clothesColor=ff488e,ffafb9,ffffb1,ff5c5c,5199e4&accessories=kurt,prescription01,sunglasses&accessoriesProbability=20`;
 
       const newUser = new UserModel({
